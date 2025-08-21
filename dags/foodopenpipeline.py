@@ -12,7 +12,7 @@ def extract(**kwargs):
     # Explicitly read all columns as strings to avoid dtype issues
     data_food = pd.read_csv(file_path, sep='\t', dtype=str, low_memory=False)
     
-    data_food.to_parquet('/opt/airflow/dags/raw_data.parquet')  # نخزنها مؤقتاً
+    data_food.to_parquet('/opt/airflow/dags/raw_data.parquet') 
     print("Data extracted and saved as raw_data.parquet")
 
 def load(**kwargs):
@@ -32,7 +32,7 @@ with DAG(
     )
     transform_tk = SparkSubmitOperator(
     task_id='transform_with_spark',
-    application='/opt/airflow/dags/spark_jobs/transform_job.py',  # ← هذا المسار مهم
+    application='/opt/airflow/dags/spark_jobs/transform_job.py',  
     conn_id='spark_default',
     dag=dag,
 )
