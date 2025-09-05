@@ -1,4 +1,9 @@
 #  Food ETL Pipeline with Spark & Airflow
+![Airflow](https://img.shields.io/badge/Airflow-2.9+-blue?logo=apacheairflow)
+![Spark](https://img.shields.io/badge/Spark-3.0+-orange?logo=apachespark)
+![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?logo=docker)
+![Python](https://img.shields.io/badge/Python-3.9+-yellow?logo=python)
+
 
 ## 📌 Overview
 An **end-to-end ETL pipeline** built with **Apache Spark** and **Apache Airflow** to process the [OpenFoodFacts dataset](https://world.openfoodfacts.org/).  
