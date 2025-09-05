@@ -88,7 +88,7 @@ flowchart TD
 ---
 
 ## 🚧 Future Enhancements
-- ☁️ Extend to **cloud data lakes** (S3, GCS, BigQuery)  
+- ☁️ Extend to **cloud data lakes** (S3, GCS)  
 - ⚡ Optimize Spark with **partitioning, caching, cluster mode**  
 
 
